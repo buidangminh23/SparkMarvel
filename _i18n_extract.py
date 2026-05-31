@@ -6,7 +6,7 @@ import re
 from html.parser import HTMLParser
 from pathlib import Path
 
-ROOT = Path(r"L:\spark-digital")
+ROOT = Path(r"L:\SparkMarvel")
 SKIP_TAGS = {"script", "style", "noscript", "svg", "path", "rect", "circle"}
 ATTR_KEYS = {"alt", "placeholder", "aria-label", "title", "value"}
 HAS_LETTER = re.compile(r"[A-Za-zÀ-ỹ]")

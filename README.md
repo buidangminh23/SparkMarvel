@@ -12,7 +12,7 @@ Website giới thiệu công ty và bán dịch vụ thiết kế website / phá
 ## Cấu trúc
 
 ```
-spark-digital/
+SparkMarvel/
 ├── index.html          # Trang chủ (hero ảnh lớn, dịch vụ, dự án, timeline teaser, testimonials)
 ├── about.html          # Giới thiệu công ty + timeline quá trình hình thành + giá trị + đội ngũ
 ├── services.html       # Chi tiết dịch vụ (ảnh xen kẽ) + quy trình 6 bước
@@ -78,7 +78,7 @@ Hoặc kéo-thả thư mục vào Netlify / Cloudflare Pages / GitHub Pages.
 | Tên thương hiệu | tất cả `*.html` | text `SparkMarvel` + thẻ `<title>` |
 | Thông tin liên hệ | tất cả `*.html` | footer + `contact.html` |
 | Ảnh sản phẩm thật | tất cả `*.html` | thay URL `images.unsplash.com/...` bằng ảnh của bạn (giữ `srcset`, `alt`, `width/height`) |
-| Domain SEO | `robots.txt`, `sitemap.xml`, meta `og:` | thay `spark-digital.example.com` |
+| Domain SEO | `robots.txt`, `sitemap.xml`, meta `og:` | thay `sparkmarvel.example.com` |
 
 ## Nâng cấp production (tùy chọn)
 
