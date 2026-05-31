@@ -1,0 +1,11 @@
+.vercel/
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+.cache/
+__pycache__/
+*.pyc
+_i18n_strings.json

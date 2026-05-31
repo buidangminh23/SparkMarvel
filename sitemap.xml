@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://spark-digital.example.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://spark-digital.example.com/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spark-digital.example.com/services.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spark-digital.example.com/products.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spark-digital.example.com/industries.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spark-digital.example.com/education.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/retail.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/fnb.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/healthcare.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/realestate.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/beauty.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/logistics.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/manufacturing.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://spark-digital.example.com/blog-toc-do-website.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spark-digital.example.com/blog-chatbot-ai.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spark-digital.example.com/blog-chon-nen-tang.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://spark-digital.example.com/pricing.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/portfolio.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://spark-digital.example.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+</urlset>

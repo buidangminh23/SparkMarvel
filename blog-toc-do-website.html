@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>5 cách tăng tốc website lên 90+ điểm PageSpeed — Spark Digital</title>
+  <meta name="description" content="Hướng dẫn thực chiến 5 cách tăng tốc website lên 90+ điểm Google PageSpeed: tối ưu ảnh, lazy-load, nén tài nguyên, CDN/cache và đo bằng số liệu thật." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="5 cách tăng tốc website lên 90+ điểm PageSpeed" />
+  <meta property="og:description" content="5 việc tạo khác biệt lớn nhất khi tối ưu tốc độ website." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C2410C' d='M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-cream font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-cream">Bỏ qua tới nội dung</a>
+
+  <header data-header class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <nav class="flex items-center justify-between py-5" aria-label="Điều hướng chính">
+        <a href="index.html" class="flex items-center gap-2.5" aria-label="Spark Digital trang chủ">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-ink text-cream"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg></span>
+          <span class="font-display text-xl font-bold tracking-tightish text-ink">Spark Digital</span>
+        </a>
+        <div class="hidden items-center gap-7 xl:flex">
+          <a data-nav="index.html" href="index.html" class="nav-link text-sm font-medium text-muted">Trang chủ</a>
+          <a data-nav="about.html" href="about.html" class="nav-link text-sm font-medium text-muted">Giới thiệu</a>
+          <a data-nav="services.html" href="services.html" class="nav-link text-sm font-medium text-muted">Dịch vụ</a>
+          <a data-nav="products.html" href="products.html" class="nav-link text-sm font-medium text-muted">Sản phẩm</a>
+          <a data-nav="industries.html" href="industries.html" class="nav-link text-sm font-medium text-muted">Ngành nghề</a>
+          <a data-nav="pricing.html" href="pricing.html" class="nav-link text-sm font-medium text-muted">Bảng giá</a>
+          <a data-nav="portfolio.html" href="portfolio.html" class="nav-link text-sm font-medium text-muted">Portfolio</a>
+          <a data-nav="contact.html" href="contact.html" class="nav-link text-sm font-medium text-muted">Liên hệ</a>
+        </div>
+        <div class="hidden items-center gap-5 xl:flex">
+          <a href="tel:+84384741350" class="text-sm font-semibold text-ink transition-colors hover:text-accent">0384 741 350</a>
+          <a href="contact.html" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-accent">Nhận báo giá</a>
+        </div>
+        <button data-menu-toggle type="button" class="grid h-10 w-10 place-items-center rounded-full border border-line bg-paper/60 text-ink xl:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+      </nav>
+    </div>
+    <div id="mobile-menu" data-mobile-menu class="mx-5 hidden rounded-2xl border border-line bg-paper p-4 shadow-soft xl:hidden">
+      <div class="flex flex-col gap-1">
+        <a data-nav="index.html" href="index.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Trang chủ</a>
+        <a data-nav="about.html" href="about.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Giới thiệu</a>
+        <a data-nav="services.html" href="services.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Dịch vụ</a>
+        <a data-nav="products.html" href="products.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Sản phẩm</a>
+        <a data-nav="industries.html" href="industries.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Ngành nghề</a>
+        <a data-nav="pricing.html" href="pricing.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Bảng giá</a>
+        <a data-nav="portfolio.html" href="portfolio.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Portfolio</a>
+        <a data-nav="contact.html" href="contact.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Liên hệ</a>
+        <a href="contact.html" class="mt-2 rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-cream hover:bg-accent">Nhận báo giá miễn phí</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article>
+      <header class="px-5 pt-32 pb-10 sm:px-8 lg:pt-40">
+        <div class="mx-auto max-w-3xl">
+          <nav class="reveal text-sm text-muted" aria-label="Breadcrumb"><a href="blog.html" class="transition-colors hover:text-accent">Blog</a><span class="mx-2">/</span><span class="text-ink">Hiệu năng</span></nav>
+          <h1 class="reveal mt-5 font-display text-4xl font-bold leading-tight tracking-tightish text-ink sm:text-5xl">5 cách tăng tốc website lên 90+ điểm PageSpeed</h1>
+          <div class="reveal mt-6 flex items-center gap-3 text-sm text-muted">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-ink font-display text-sm font-bold text-cream">SD</span>
+            <span>Spark Digital</span><span aria-hidden="true">·</span><span>15 Th4, 2026</span><span aria-hidden="true">·</span><span>6 phút đọc</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="reveal px-5 sm:px-8">
+        <div class="img-zoom mx-auto max-w-4xl overflow-hidden rounded-xl2 border border-line shadow-soft">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=72&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=72&auto=format&fit=crop 1200w" sizes="(max-width: 896px) 100vw, 896px" width="1200" height="630" loading="eager" decoding="async" alt="Bảng phân tích hiệu suất website trên laptop" class="aspect-[16/9] w-full object-cover" />
+        </div>
+      </div>
+
+      <div class="px-5 py-12 sm:px-8">
+        <div class="reveal mx-auto max-w-2xl text-ink">
+          <p class="text-xl leading-relaxed text-muted">Tốc độ tải không chỉ là con số đẹp trong báo cáo — nó ảnh hưởng trực tiếp đến tỷ lệ chuyển đổi, thứ hạng SEO và cảm nhận thương hiệu. Dưới đây là 5 việc tạo khác biệt lớn nhất mà Spark Digital luôn áp dụng để đạt 90+ điểm PageSpeed.</p>
+
+          <h2 class="mt-12 font-display text-2xl font-bold text-ink sm:text-3xl">1. Tối ưu hình ảnh triệt để</h2>
+          <p class="mt-5 text-lg leading-relaxed text-muted">Hình ảnh thường chiếm 60–70% dung lượng trang. Tối ưu đúng cách có thể giảm một nửa thời gian tải:</p>
+          <ul class="mt-5 space-y-2 text-lg text-muted">
+            <li class="flex gap-3"><span class="mt-1 text-accent">—</span> Dùng định dạng hiện đại WebP/AVIF thay JPEG/PNG.</li>
+            <li class="flex gap-3"><span class="mt-1 text-accent">—</span> Khai báo <code class="rounded bg-sand px-1.5 py-0.5 text-base text-ink">srcset</code> để phục vụ kích thước phù hợp từng màn hình.</li>
+            <li class="flex gap-3"><span class="mt-1 text-accent">—</span> Đặt <code class="rounded bg-sand px-1.5 py-0.5 text-base text-ink">width/height</code> để tránh nhảy layout (CLS).</li>
+          </ul>
+
+          <h2 class="mt-12 font-display text-2xl font-bold text-ink sm:text-3xl">2. Ưu tiên nội dung trong màn hình đầu</h2>
+          <p class="mt-5 text-lg leading-relaxed text-muted">Tải sớm ảnh hero (<code class="rounded bg-sand px-1.5 py-0.5 text-base text-ink">fetchpriority="high"</code>) và lazy-load mọi thứ phía dưới. Người dùng cảm nhận trang "nhanh" khi phần đầu hiện ngay, dù phần dưới vẫn đang tải.</p>
+
+          <h2 class="mt-12 font-display text-2xl font-bold text-ink sm:text-3xl">3. Giảm &amp; nén tài nguyên CSS/JS</h2>
+          <p class="mt-5 text-lg leading-relaxed text-muted">Chỉ tải đúng thứ cần dùng: tách CSS critical, defer JavaScript không quan trọng, loại bỏ thư viện thừa. Mỗi KB cắt bớt là một phần nghìn giây tiết kiệm được, cộng dồn lại rất đáng kể.</p>
+
+          <h2 class="mt-12 font-display text-2xl font-bold text-ink sm:text-3xl">4. Dùng CDN &amp; cache đúng cách</h2>
+          <p class="mt-5 text-lg leading-relaxed text-muted">Phục vụ tài nguyên tĩnh từ CDN gần người dùng, đặt <code class="rounded bg-sand px-1.5 py-0.5 text-base text-ink">Cache-Control: immutable</code> cho asset có hash. Lần truy cập thứ hai gần như tức thì.</p>
+
+          <h2 class="mt-12 font-display text-2xl font-bold text-ink sm:text-3xl">5. Đo bằng số liệu thật</h2>
+          <p class="mt-5 text-lg leading-relaxed text-muted">Tối ưu mò là lãng phí. Hãy đo trước bằng Lighthouse &amp; dữ liệu người dùng thật (Core Web Vitals: LCP, INP, CLS), tìm điểm nghẽn rồi mới sửa.</p>
+
+          <blockquote class="mt-10 border-l-4 border-accent pl-5">
+            <p class="font-display text-xl italic text-ink">"Nhanh hơn 1 giây có thể tăng chuyển đổi tới 7%. Tốc độ là tính năng, không phải thứ làm sau."</p>
+          </blockquote>
+
+          <p class="mt-10 text-lg leading-relaxed text-muted">Áp dụng đủ 5 điểm trên, hầu hết website đạt 90+ PageSpeed mà không cần hạ tầng đắt đỏ. Mọi website Spark Digital bàn giao đều được tối ưu sẵn theo checklist này.</p>
+        </div>
+      </div>
+
+      <div class="px-5 pb-8 sm:px-8">
+        <div class="mx-auto max-w-2xl overflow-hidden rounded-xl2 bg-ink px-6 py-10 text-center text-cream">
+          <h2 class="font-display text-2xl font-bold sm:text-3xl">Website của bạn đang chậm?</h2>
+          <p class="mx-auto mt-3 max-w-md text-cream/70">Nhận tư vấn tối ưu tốc độ miễn phí — chúng tôi đo &amp; chỉ ra điểm nghẽn cụ thể.</p>
+          <a href="contact.html" class="mt-6 inline-flex items-center justify-center rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover">Nhận tư vấn miễn phí</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="px-5 py-12 sm:px-8 lg:py-16">
+      <div class="mx-auto max-w-5xl">
+        <h2 class="reveal font-display text-2xl font-bold tracking-tightish text-ink">Bài viết liên quan</h2>
+        <div class="reveal mt-6 grid gap-6 sm:grid-cols-2">
+          <a href="blog-chatbot-ai.html" class="group flex gap-4 rounded-xl2 border border-line bg-paper p-4 shadow-soft transition-colors hover:border-ink">
+            <div class="img-zoom h-20 w-28 shrink-0 overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&q=60&auto=format&fit=crop" width="300" height="200" loading="lazy" decoding="async" alt="Chữ AI 3D" class="h-full w-full object-cover" /></div>
+            <div><p class="text-xs font-semibold uppercase tracking-wider text-accent">AI</p><h3 class="mt-1 font-display font-bold leading-snug text-ink">Chatbot AI thay đổi chăm sóc khách hàng như thế nào?</h3></div>
+          </a>
+          <a href="blog-chon-nen-tang.html" class="group flex gap-4 rounded-xl2 border border-line bg-paper p-4 shadow-soft transition-colors hover:border-ink">
+            <div class="img-zoom h-20 w-28 shrink-0 overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=300&q=60&auto=format&fit=crop" width="300" height="200" loading="lazy" decoding="async" alt="Thiết kế giao diện website" class="h-full w-full object-cover" /></div>
+            <div><p class="text-xs font-semibold uppercase tracking-wider text-accent">Công nghệ</p><h3 class="mt-1 font-display font-bold leading-snug text-ink">Nên chọn website tĩnh, WordPress hay code riêng?</h3></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-cream">
+    <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <div class="grid gap-10 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5"><span class="grid h-9 w-9 place-items-center rounded-full bg-cream text-ink"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg></span><span class="font-display text-xl font-bold text-cream">Spark Digital</span></a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">Studio chuyển đổi số — thiết kế website &amp; phát triển phần mềm giúp doanh nghiệp tăng trưởng.</p>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Dịch vụ</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Thiết kế Website</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Phát triển Phần mềm</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm AI</a></li>
+            <li><a href="industries.html" class="text-cream/80 transition-colors hover:text-white">Giải pháp theo ngành</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Công ty</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="about.html" class="text-cream/80 transition-colors hover:text-white">Giới thiệu</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm</a></li>
+            <li><a href="pricing.html" class="text-cream/80 transition-colors hover:text-white">Bảng giá</a></li>
+            <li><a href="portfolio.html" class="text-cream/80 transition-colors hover:text-white">Portfolio</a></li>
+            <li><a href="blog.html" class="text-cream/80 transition-colors hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Liên hệ</h3>
+          <ul class="mt-4 space-y-3 text-sm text-cream/80">
+            <li><a href="mailto:buidangminh.lh@gmail.com" class="transition-colors hover:text-white">buidangminh.lh@gmail.com</a></li>
+            <li><a href="tel:+84384741350" class="transition-colors hover:text-white">0384 741 350</a></li>
+            <li>Đông Anh, Hà Nội, Việt Nam</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+        <p class="text-sm text-cream/50">© <span data-year>2026</span> Spark Digital. Mọi quyền được bảo lưu.</p>
+        <p class="text-sm text-cream/50">Thiết kế &amp; phát triển bởi Spark Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <button data-back-to-top type="button" class="fixed bottom-6 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-ink text-cream opacity-0 shadow-soft transition-opacity duration-300 hover:bg-accent" aria-label="Lên đầu trang"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7" /></svg></button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/widgets.js"></script>
+</body>
+</html>

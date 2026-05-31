@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liên hệ — Spark Digital</title>
+  <meta name="description" content="Liên hệ Spark Digital để nhận tư vấn và báo giá miễn phí thiết kế website, phần mềm trong 24 giờ. Điện thoại, email và form yêu cầu." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Liên hệ — Spark Digital" />
+  <meta property="og:description" content="Nhận tư vấn và báo giá miễn phí trong 24 giờ." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C2410C' d='M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-cream font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-cream">Bỏ qua tới nội dung</a>
+
+  <header data-header class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <nav class="flex items-center justify-between py-5" aria-label="Điều hướng chính">
+        <a href="index.html" class="flex items-center gap-2.5" aria-label="Spark Digital trang chủ">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-ink text-cream">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg>
+          </span>
+          <span class="font-display text-xl font-bold tracking-tightish text-ink">Spark Digital</span>
+        </a>
+        <div class="hidden items-center gap-7 xl:flex">
+          <a data-nav="index.html" href="index.html" class="nav-link text-sm font-medium text-muted">Trang chủ</a>
+          <a data-nav="about.html" href="about.html" class="nav-link text-sm font-medium text-muted">Giới thiệu</a>
+          <a data-nav="services.html" href="services.html" class="nav-link text-sm font-medium text-muted">Dịch vụ</a>
+          <a data-nav="products.html" href="products.html" class="nav-link text-sm font-medium text-muted">Sản phẩm</a>
+          <a data-nav="industries.html" href="industries.html" class="nav-link text-sm font-medium text-muted">Ngành nghề</a>
+          <a data-nav="pricing.html" href="pricing.html" class="nav-link text-sm font-medium text-muted">Bảng giá</a>
+          <a data-nav="portfolio.html" href="portfolio.html" class="nav-link text-sm font-medium text-muted">Portfolio</a>
+          <a data-nav="contact.html" href="contact.html" class="nav-link text-sm font-medium text-muted">Liên hệ</a>
+        </div>
+        <div class="hidden items-center gap-5 xl:flex">
+          <a href="tel:+84384741350" class="text-sm font-semibold text-ink transition-colors hover:text-accent">0384 741 350</a>
+          <a href="contact.html" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-accent">Nhận báo giá</a>
+        </div>
+        <button data-menu-toggle type="button" class="grid h-10 w-10 place-items-center rounded-full border border-line bg-paper/60 text-ink xl:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu">
+          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+      </nav>
+    </div>
+    <div id="mobile-menu" data-mobile-menu class="mx-5 hidden rounded-2xl border border-line bg-paper p-4 shadow-soft xl:hidden">
+      <div class="flex flex-col gap-1">
+        <a data-nav="index.html" href="index.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Trang chủ</a>
+        <a data-nav="about.html" href="about.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Giới thiệu</a>
+        <a data-nav="services.html" href="services.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Dịch vụ</a>
+        <a data-nav="products.html" href="products.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Sản phẩm</a>
+        <a data-nav="industries.html" href="industries.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Ngành nghề</a>
+        <a data-nav="pricing.html" href="pricing.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Bảng giá</a>
+        <a data-nav="portfolio.html" href="portfolio.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Portfolio</a>
+        <a data-nav="contact.html" href="contact.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Liên hệ</a>
+        <a href="contact.html" class="mt-2 rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-cream hover:bg-accent">Nhận báo giá miễn phí</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="px-5 pt-32 pb-10 sm:px-8 lg:pt-40">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="eyebrow text-accent">Liên hệ</p>
+        <h1 class="mt-5 font-display text-5xl font-bold leading-[1.06] tracking-tightish text-ink sm:text-6xl">Bắt đầu dự án <span class="text-accent">cùng chúng tôi</span></h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">Gửi yêu cầu, nhận tư vấn và báo giá miễn phí trong vòng 24 giờ làm việc.</p>
+      </div>
+    </section>
+
+    <section class="px-5 pb-20 sm:px-8 lg:pb-28">
+      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-5">
+        <div class="reveal lg:col-span-3">
+          <form data-contact-form novalidate class="rounded-xl2 border border-line bg-paper p-7 shadow-soft sm:p-9">
+            <h2 class="font-display text-2xl font-bold text-ink">Gửi yêu cầu báo giá</h2>
+            <p class="mt-1 text-sm text-muted">Các trường có dấu <span class="text-accent">*</span> là bắt buộc.</p>
+
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none !important" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="mt-6 grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="name" class="mb-1.5 block text-sm font-semibold text-ink">Họ và tên <span class="text-accent">*</span></label>
+                <input id="name" name="name" type="text" data-required autocomplete="name" placeholder="Nguyễn Văn A" class="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-accent focus:bg-paper" />
+                <p data-error-for="name" class="mt-1 text-xs font-medium text-red-600" role="alert"></p>
+              </div>
+              <div>
+                <label for="email" class="mb-1.5 block text-sm font-semibold text-ink">Email <span class="text-accent">*</span></label>
+                <input id="email" name="email" type="email" data-required autocomplete="email" placeholder="ban@congty.com" class="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-accent focus:bg-paper" />
+                <p data-error-for="email" class="mt-1 text-xs font-medium text-red-600" role="alert"></p>
+              </div>
+              <div>
+                <label for="phone" class="mb-1.5 block text-sm font-semibold text-ink">Số điện thoại <span class="text-accent">*</span></label>
+                <input id="phone" name="phone" type="tel" data-required autocomplete="tel" placeholder="0384 741 350" class="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-accent focus:bg-paper" />
+                <p data-error-for="phone" class="mt-1 text-xs font-medium text-red-600" role="alert"></p>
+              </div>
+              <div>
+                <label for="service" class="mb-1.5 block text-sm font-semibold text-ink">Dịch vụ quan tâm</label>
+                <select id="service" name="service" class="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-accent focus:bg-paper">
+                  <option value="Thiết kế Website">Thiết kế Website</option>
+                  <option value="Phát triển Phần mềm">Phát triển Phần mềm</option>
+                  <option value="Web App / SaaS">Web App / SaaS</option>
+                  <option value="Chatbot AI">Chatbot AI</option>
+                  <option value="SEO &amp; Bảo trì">SEO &amp; Bảo trì</option>
+                  <option value="Khác">Khác</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <label for="message" class="mb-1.5 block text-sm font-semibold text-ink">Mô tả dự án <span class="text-accent">*</span></label>
+              <textarea id="message" name="message" data-required rows="5" placeholder="Mô tả ngắn gọn nhu cầu, mục tiêu và ngân sách dự kiến của bạn..." class="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-ink outline-none transition-colors focus:border-accent focus:bg-paper"></textarea>
+              <p data-error-for="message" class="mt-1 text-xs font-medium text-red-600" role="alert"></p>
+            </div>
+
+            <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-accent-hover">
+                Gửi yêu cầu
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+              <p data-form-status class="text-sm font-semibold text-muted" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="reveal lg:col-span-2" data-reveal-delay="1">
+          <div class="space-y-4">
+            <a href="tel:+84384741350" class="flex items-start gap-4 rounded-xl2 border border-line bg-paper p-5 shadow-soft transition-colors hover:border-ink">
+              <span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-accent-soft text-accent">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2.3a1 1 0 0 1 1 .76l1 4a1 1 0 0 1-.3 1L7.6 10.6a14 14 0 0 0 5.8 5.8l1.84-1.4a1 1 0 0 1 1-.3l4 1a1 1 0 0 1 .76 1V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5z" /></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold text-ink">Điện thoại / Zalo</p>
+                <p class="mt-0.5 text-sm text-muted">0384 741 350</p>
+              </div>
+            </a>
+            <a href="mailto:buidangminh.lh@gmail.com" class="flex items-start gap-4 rounded-xl2 border border-line bg-paper p-5 shadow-soft transition-colors hover:border-ink">
+              <span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-accent-soft text-accent">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6" /></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold text-ink">Email</p>
+                <p class="mt-0.5 break-all text-sm text-muted">buidangminh.lh@gmail.com</p>
+              </div>
+            </a>
+            <div class="flex items-start gap-4 rounded-xl2 border border-line bg-paper p-5 shadow-soft">
+              <span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-accent-soft text-accent">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold text-ink">Địa chỉ</p>
+                <p class="mt-0.5 text-sm text-muted">Thị trấn Đông Anh, Hà Nội, Việt Nam</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 rounded-xl2 border border-line bg-paper p-5 shadow-soft">
+              <span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-accent-soft text-accent">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 2" /></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold text-ink">Giờ làm việc</p>
+                <p class="mt-0.5 text-sm text-muted">Thứ 2 – Thứ 7 · 8:00 – 18:00</p>
+              </div>
+            </div>
+            <div class="rounded-xl2 bg-ink p-6 text-cream">
+              <p class="font-display text-lg font-bold">Phản hồi nhanh trong 24 giờ</p>
+              <p class="mt-2 text-sm text-cream/70">Mọi yêu cầu đều được tư vấn miễn phí, không ràng buộc. Chúng tôi cam kết bảo mật thông tin của bạn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-cream">
+    <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <div class="grid gap-10 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-cream text-ink">
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg>
+            </span>
+            <span class="font-display text-xl font-bold text-cream">Spark Digital</span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">Studio chuyển đổi số — thiết kế website &amp; phát triển phần mềm giúp doanh nghiệp tăng trưởng.</p>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Dịch vụ</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Thiết kế Website</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Phát triển Phần mềm</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Web App &amp; SaaS</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">SEO &amp; Bảo trì</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Công ty</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="about.html" class="text-cream/80 transition-colors hover:text-white">Giới thiệu</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm</a></li>
+            <li><a href="pricing.html" class="text-cream/80 transition-colors hover:text-white">Bảng giá</a></li>
+            <li><a href="portfolio.html" class="text-cream/80 transition-colors hover:text-white">Portfolio</a></li>
+            <li><a href="blog.html" class="text-cream/80 transition-colors hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Liên hệ</h3>
+          <ul class="mt-4 space-y-3 text-sm text-cream/80">
+            <li><a href="mailto:buidangminh.lh@gmail.com" class="transition-colors hover:text-white">buidangminh.lh@gmail.com</a></li>
+            <li><a href="tel:+84384741350" class="transition-colors hover:text-white">0384 741 350</a></li>
+            <li>Đông Anh, Hà Nội, Việt Nam</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+        <p class="text-sm text-cream/50">© <span data-year>2026</span> Spark Digital. Mọi quyền được bảo lưu.</p>
+        <p class="text-sm text-cream/50">Thiết kế &amp; phát triển bởi Spark Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <button data-back-to-top type="button" class="fixed bottom-6 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-ink text-cream opacity-0 shadow-soft transition-opacity duration-300 hover:bg-accent" aria-label="Lên đầu trang">
+    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7" /></svg>
+  </button>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/widgets.js"></script>
+</body>
+</html>

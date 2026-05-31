@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spark-digital.example.com/sitemap.xml

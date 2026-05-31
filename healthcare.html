@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giải pháp Y tế & Phòng khám — Spark Digital</title>
+  <meta name="description" content="Giải pháp số cho phòng khám & y tế: đặt lịch khám online, hồ sơ bệnh án điện tử, chatbot sàng lọc, nhắc tái khám và telehealth — cho phòng khám và bệnh nhân." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Giải pháp Y tế & Phòng khám — Spark Digital" />
+  <meta property="og:description" content="Đặt lịch khám, hồ sơ bệnh án và chăm sóc bệnh nhân số hóa." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C2410C' d='M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-cream font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-cream">Bỏ qua tới nội dung</a>
+
+  <header data-header class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <nav class="flex items-center justify-between py-5" aria-label="Điều hướng chính">
+        <a href="index.html" class="flex items-center gap-2.5" aria-label="Spark Digital trang chủ">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-ink text-cream"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg></span>
+          <span class="font-display text-xl font-bold tracking-tightish text-ink">Spark Digital</span>
+        </a>
+        <div class="hidden items-center gap-7 xl:flex">
+          <a data-nav="index.html" href="index.html" class="nav-link text-sm font-medium text-muted">Trang chủ</a>
+          <a data-nav="about.html" href="about.html" class="nav-link text-sm font-medium text-muted">Giới thiệu</a>
+          <a data-nav="services.html" href="services.html" class="nav-link text-sm font-medium text-muted">Dịch vụ</a>
+          <a data-nav="products.html" href="products.html" class="nav-link text-sm font-medium text-muted">Sản phẩm</a>
+          <a data-nav="industries.html" href="industries.html" aria-current="page" class="nav-link text-sm font-medium text-muted">Ngành nghề</a>
+          <a data-nav="pricing.html" href="pricing.html" class="nav-link text-sm font-medium text-muted">Bảng giá</a>
+          <a data-nav="portfolio.html" href="portfolio.html" class="nav-link text-sm font-medium text-muted">Portfolio</a>
+          <a data-nav="contact.html" href="contact.html" class="nav-link text-sm font-medium text-muted">Liên hệ</a>
+        </div>
+        <div class="hidden items-center gap-5 xl:flex">
+          <a href="tel:+84384741350" class="text-sm font-semibold text-ink transition-colors hover:text-accent">0384 741 350</a>
+          <a href="contact.html" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-accent">Nhận báo giá</a>
+        </div>
+        <button data-menu-toggle type="button" class="grid h-10 w-10 place-items-center rounded-full border border-line bg-paper/60 text-ink xl:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+      </nav>
+    </div>
+    <div id="mobile-menu" data-mobile-menu class="mx-5 hidden rounded-2xl border border-line bg-paper p-4 shadow-soft xl:hidden">
+      <div class="flex flex-col gap-1">
+        <a data-nav="index.html" href="index.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Trang chủ</a>
+        <a data-nav="about.html" href="about.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Giới thiệu</a>
+        <a data-nav="services.html" href="services.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Dịch vụ</a>
+        <a data-nav="products.html" href="products.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Sản phẩm</a>
+        <a data-nav="industries.html" href="industries.html" class="rounded-lg bg-sand px-3 py-2.5 text-sm font-medium text-ink">Ngành nghề</a>
+        <a data-nav="pricing.html" href="pricing.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Bảng giá</a>
+        <a data-nav="portfolio.html" href="portfolio.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Portfolio</a>
+        <a data-nav="contact.html" href="contact.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Liên hệ</a>
+        <a href="contact.html" class="mt-2 rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-cream hover:bg-accent">Nhận báo giá miễn phí</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="px-5 pt-32 pb-12 sm:px-8 lg:pt-40">
+      <div class="mx-auto max-w-7xl">
+        <nav class="reveal mb-6 text-sm text-muted" aria-label="Breadcrumb"><a href="industries.html" class="transition-colors hover:text-accent">Ngành nghề</a><span class="mx-2">/</span><span class="text-ink">Y tế &amp; Phòng khám</span></nav>
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div class="reveal">
+            <p class="eyebrow text-accent">Giải pháp ngành · Y tế</p>
+            <h1 class="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-tightish text-ink sm:text-6xl">Số hóa phòng khám, <span class="text-accent">chăm sóc tận tâm</span></h1>
+            <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted">Từ đặt lịch, bệnh án điện tử đến nhắc tái khám — giảm chờ đợi, tăng trải nghiệm cho bệnh nhân.</p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#clinic" class="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-accent-hover">Cho phòng khám</a>
+              <a href="#patient" class="inline-flex items-center justify-center rounded-full border border-ink px-7 py-4 text-base font-semibold text-ink transition-colors hover:bg-ink hover:text-cream">Cho bệnh nhân</a>
+            </div>
+          </div>
+          <div class="reveal group" data-reveal-delay="1">
+            <div class="img-zoom overflow-hidden rounded-xl2 border border-line shadow-lift">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1000&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=72&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1000&q=72&auto=format&fit=crop 1000w" sizes="(max-width: 1024px) 100vw, 50vw" width="1000" height="750" loading="eager" fetchpriority="high" decoding="async" alt="Ống nghe y tế bên cạnh laptop" class="aspect-[4/3] w-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clinic" class="scroll-mt-24 px-5 py-16 sm:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div class="reveal group order-2 lg:order-1">
+            <div class="img-zoom overflow-hidden rounded-xl2 border border-line shadow-soft"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=72&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1000&q=72&auto=format&fit=crop 1000w" sizes="(max-width: 1024px) 100vw, 50vw" width="1000" height="667" loading="lazy" decoding="async" alt="Bảng điều khiển quản lý phòng khám trên laptop" class="aspect-[3/2] w-full object-cover" /></div>
+          </div>
+          <div class="reveal order-1 lg:order-2">
+            <p class="eyebrow text-accent">Cho phòng khám &amp; bác sĩ</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink sm:text-5xl">Quản lý gọn, tập trung chuyên môn</h2>
+            <p class="mt-4 text-lg text-muted">Lịch hẹn, bệnh án và dược phẩm trên một hệ thống bảo mật, đúng quy trình.</p>
+          </div>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path stroke-linecap="round" d="M8 9h8M8 13h8M8 17h5"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Web phòng khám chuẩn SEO</h3><p class="mt-2 text-sm text-muted">Giới thiệu dịch vụ, bác sĩ &amp; đặt lịch — lên top tìm kiếm.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path stroke-linecap="round" d="M3 9h18M8 2v4M16 2v4"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Quản lý lịch hẹn &amp; phòng</h3><p class="mt-2 text-sm text-muted">Sắp xếp lịch bác sĩ, phòng khám, tránh trùng &amp; quá tải.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m-7 8H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h8l4 4v10a2 2 0 0 1-2 2h-1"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Hồ sơ bệnh án điện tử</h3><p class="mt-2 text-sm text-muted">Lưu trữ EMR an toàn, tra cứu lịch sử khám tức thì.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Đơn thuốc &amp; kho dược</h3><p class="mt-2 text-sm text-muted">Kê đơn điện tử, trừ kho thuốc &amp; cảnh báo tồn.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 19V5m0 14h16M8 16v-5m4 5V8m4 8v-3"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Báo cáo doanh thu &amp; bệnh nhân</h3><p class="mt-2 text-sm text-muted">Thống kê lượt khám, doanh thu, dịch vụ theo thời gian.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm13 10v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Phân quyền bác sĩ / lễ tân</h3><p class="mt-2 text-sm text-muted">Mỗi vai trò một quyền truy cập, bảo mật dữ liệu bệnh nhân.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="patient" class="scroll-mt-24 bg-sand/50 px-5 py-16 sm:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div class="reveal group">
+            <div class="img-zoom overflow-hidden rounded-xl2 border border-line shadow-soft"><img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1000&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=700&q=72&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1000&q=72&auto=format&fit=crop 1000w" sizes="(max-width: 1024px) 100vw, 50vw" width="1000" height="667" loading="lazy" decoding="async" alt="Đặt lịch khám trên laptop" class="aspect-[3/2] w-full object-cover" /></div>
+          </div>
+          <div class="reveal" data-reveal-delay="1">
+            <p class="eyebrow text-accent">Cho bệnh nhân</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink sm:text-5xl">Khám dễ hơn, an tâm hơn</h2>
+            <p class="mt-4 text-lg text-muted">Đặt lịch, tra kết quả và được nhắc lịch — không còn xếp hàng chờ đợi.</p>
+          </div>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path stroke-linecap="round" d="M3 9h18M8 2v4M16 2v4"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Đặt lịch khám online</h3><p class="mt-2 text-sm text-muted">Chọn bác sĩ &amp; khung giờ, nhận xác nhận tức thì.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h8M8 14h5M21 12a8 8 0 0 1-8 8H7l-4 3v-7a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Chatbot sàng lọc triệu chứng</h3><p class="mt-2 text-sm text-muted">Hỏi đáp ban đầu, hướng dẫn chọn đúng chuyên khoa.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 0 0-4-5.7V5a2 2 0 1 0-4 0v.3A6 6 0 0 0 6 11v3.2a2 2 0 0 1-.6 1.4L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Nhắc tái khám tự động</h3><p class="mt-2 text-sm text-muted">Tự gửi nhắc lịch tái khám &amp; uống thuốc qua Zalo/SMS.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path stroke-linecap="round" d="M8 9h8M8 13h8M8 17h5"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Tra cứu kết quả xét nghiệm</h3><p class="mt-2 text-sm text-muted">Nhận kết quả &amp; chỉ định online, không cần đến lấy.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm13 10v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Tư vấn từ xa (telehealth)</h3><p class="mt-2 text-sm text-muted">Khám &amp; tư vấn qua video, đơn thuốc điện tử tận nhà.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path stroke-linecap="round" d="M3 10h18"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Thanh toán &amp; hóa đơn điện tử</h3><p class="mt-2 text-sm text-muted">Thanh toán viện phí online, xuất hóa đơn tự động.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 sm:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal overflow-hidden rounded-xl2 bg-ink px-6 py-16 text-center text-cream sm:px-12">
+          <h2 class="mx-auto max-w-2xl font-display text-4xl font-bold tracking-tightish sm:text-5xl">Số hóa phòng khám của bạn</h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg text-cream/70">Nhận tư vấn &amp; báo giá miễn phí giải pháp y tế phù hợp quy mô của bạn.</p>
+          <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-accent-hover">Nhận tư vấn miễn phí</a>
+            <a href="industries.html" class="inline-flex items-center justify-center rounded-full border border-cream/30 px-7 py-4 text-base font-semibold text-cream transition-colors hover:bg-cream hover:text-ink">Xem ngành khác</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-cream">
+    <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <div class="grid gap-10 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5"><span class="grid h-9 w-9 place-items-center rounded-full bg-cream text-ink"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg></span><span class="font-display text-xl font-bold text-cream">Spark Digital</span></a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">Studio chuyển đổi số — thiết kế website &amp; phát triển phần mềm giúp doanh nghiệp tăng trưởng.</p>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Dịch vụ</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Thiết kế Website</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Phát triển Phần mềm</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm AI</a></li>
+            <li><a href="industries.html" class="text-cream/80 transition-colors hover:text-white">Giải pháp theo ngành</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Công ty</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="about.html" class="text-cream/80 transition-colors hover:text-white">Giới thiệu</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm</a></li>
+            <li><a href="pricing.html" class="text-cream/80 transition-colors hover:text-white">Bảng giá</a></li>
+            <li><a href="portfolio.html" class="text-cream/80 transition-colors hover:text-white">Portfolio</a></li>
+            <li><a href="blog.html" class="text-cream/80 transition-colors hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Liên hệ</h3>
+          <ul class="mt-4 space-y-3 text-sm text-cream/80">
+            <li><a href="mailto:buidangminh.lh@gmail.com" class="transition-colors hover:text-white">buidangminh.lh@gmail.com</a></li>
+            <li><a href="tel:+84384741350" class="transition-colors hover:text-white">0384 741 350</a></li>
+            <li>Đông Anh, Hà Nội, Việt Nam</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+        <p class="text-sm text-cream/50">© <span data-year>2026</span> Spark Digital. Mọi quyền được bảo lưu.</p>
+        <p class="text-sm text-cream/50">Thiết kế &amp; phát triển bởi Spark Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <button data-back-to-top type="button" class="fixed bottom-6 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-ink text-cream opacity-0 shadow-soft transition-opacity duration-300 hover:bg-accent" aria-label="Lên đầu trang"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7" /></svg></button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/widgets.js"></script>
+</body>
+</html>

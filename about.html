@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giới thiệu — Spark Digital</title>
+  <meta name="description" content="Câu chuyện hình thành Spark Digital: từ nhóm nhỏ đam mê công nghệ đến studio đồng hành cùng 85+ doanh nghiệp. Tầm nhìn, giá trị cốt lõi và đội ngũ." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Giới thiệu — Spark Digital" />
+  <meta property="og:description" content="Hành trình hình thành và giá trị cốt lõi của Spark Digital." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C2410C' d='M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-cream font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-cream">Bỏ qua tới nội dung</a>
+
+  <header data-header class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <nav class="flex items-center justify-between py-5" aria-label="Điều hướng chính">
+        <a href="index.html" class="flex items-center gap-2.5" aria-label="Spark Digital trang chủ">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-ink text-cream">
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg>
+          </span>
+          <span class="font-display text-xl font-bold tracking-tightish text-ink">Spark Digital</span>
+        </a>
+        <div class="hidden items-center gap-7 xl:flex">
+          <a data-nav="index.html" href="index.html" class="nav-link text-sm font-medium text-muted">Trang chủ</a>
+          <a data-nav="about.html" href="about.html" class="nav-link text-sm font-medium text-muted">Giới thiệu</a>
+          <a data-nav="services.html" href="services.html" class="nav-link text-sm font-medium text-muted">Dịch vụ</a>
+          <a data-nav="products.html" href="products.html" class="nav-link text-sm font-medium text-muted">Sản phẩm</a>
+          <a data-nav="industries.html" href="industries.html" class="nav-link text-sm font-medium text-muted">Ngành nghề</a>
+          <a data-nav="pricing.html" href="pricing.html" class="nav-link text-sm font-medium text-muted">Bảng giá</a>
+          <a data-nav="portfolio.html" href="portfolio.html" class="nav-link text-sm font-medium text-muted">Portfolio</a>
+          <a data-nav="contact.html" href="contact.html" class="nav-link text-sm font-medium text-muted">Liên hệ</a>
+        </div>
+        <div class="hidden items-center gap-5 xl:flex">
+          <a href="tel:+84384741350" class="text-sm font-semibold text-ink transition-colors hover:text-accent">0384 741 350</a>
+          <a href="contact.html" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-accent">Nhận báo giá</a>
+        </div>
+        <button data-menu-toggle type="button" class="grid h-10 w-10 place-items-center rounded-full border border-line bg-paper/60 text-ink xl:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu">
+          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+      </nav>
+    </div>
+    <div id="mobile-menu" data-mobile-menu class="mx-5 hidden rounded-2xl border border-line bg-paper p-4 shadow-soft xl:hidden">
+      <div class="flex flex-col gap-1">
+        <a data-nav="index.html" href="index.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Trang chủ</a>
+        <a data-nav="about.html" href="about.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Giới thiệu</a>
+        <a data-nav="services.html" href="services.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Dịch vụ</a>
+        <a data-nav="products.html" href="products.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Sản phẩm</a>
+        <a data-nav="industries.html" href="industries.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Ngành nghề</a>
+        <a data-nav="pricing.html" href="pricing.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Bảng giá</a>
+        <a data-nav="portfolio.html" href="portfolio.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Portfolio</a>
+        <a data-nav="contact.html" href="contact.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Liên hệ</a>
+        <a href="contact.html" class="mt-2 rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-cream hover:bg-accent">Nhận báo giá miễn phí</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="px-5 pt-32 pb-12 sm:px-8 lg:pt-40">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="eyebrow text-accent">Giới thiệu</p>
+        <h1 class="mt-5 font-display text-5xl font-bold leading-[1.06] tracking-tightish text-ink sm:text-6xl">Chúng tôi là <span class="text-accent">Spark Digital</span></h1>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">Một studio công nghệ tin rằng phần mềm tốt phải vừa đẹp, vừa hiệu quả và phục vụ đúng mục tiêu kinh doanh của khách hàng.</p>
+      </div>
+    </section>
+
+    <section class="px-5 pb-12 sm:px-8">
+      <div class="mx-auto max-w-6xl">
+        <div class="img-zoom group overflow-hidden rounded-xl2 border border-line shadow-soft">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=72&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400&q=72&auto=format&fit=crop 1400w" sizes="100vw" width="1400" height="780" loading="eager" decoding="async" alt="Không gian văn phòng hiện đại của Spark Digital" class="aspect-[16/9] w-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 sm:px-8 lg:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal">
+          <p class="eyebrow text-accent">Sứ mệnh</p>
+          <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink">Công nghệ phục vụ tăng trưởng</h2>
+        </div>
+        <div class="reveal space-y-5 text-lg leading-relaxed text-muted" data-reveal-delay="1">
+          <p>Spark Digital ra đời năm 2020 từ một niềm tin đơn giản: doanh nghiệp Việt xứng đáng có những sản phẩm số đạt chuẩn quốc tế nhưng vẫn phù hợp ngân sách.</p>
+          <p>Chúng tôi không chạy theo số lượng. Mỗi dự án đều bắt đầu từ việc hiểu rõ bài toán kinh doanh, rồi mới chọn công nghệ phù hợp — để sản phẩm bàn giao thật sự tạo ra kết quả, chứ không chỉ là một website đẹp.</p>
+          <p>Sau 6 năm, chúng tôi tự hào là đối tác công nghệ của hơn 85 doanh nghiệp, từ startup non trẻ đến tập đoàn đa ngành.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-sand/50 px-5 py-20 sm:px-8 lg:py-28">
+      <div class="mx-auto max-w-3xl">
+        <div class="reveal text-center">
+          <p class="eyebrow text-accent">Hành trình</p>
+          <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink sm:text-5xl">Quá trình hình thành</h2>
+        </div>
+
+        <ol class="reveal relative mt-14">
+          <span class="absolute left-[7px] top-2 bottom-2 w-px bg-line" aria-hidden="true"></span>
+          <li class="relative pb-10 pl-12">
+            <span class="absolute left-0 top-1 grid h-4 w-4 place-items-center rounded-full border-2 border-accent bg-cream" aria-hidden="true"></span>
+            <p class="font-display text-2xl font-bold text-accent">2020</p>
+            <h3 class="mt-1 font-semibold text-ink">Những viên gạch đầu tiên</h3>
+            <p class="mt-1 text-muted">3 thành viên sáng lập, văn phòng nhỏ tại Hà Nội, nhận các dự án website đầu tiên.</p>
+          </li>
+          <li class="relative pb-10 pl-12">
+            <span class="absolute left-0 top-1 grid h-4 w-4 place-items-center rounded-full border-2 border-accent bg-cream" aria-hidden="true"></span>
+            <p class="font-display text-2xl font-bold text-accent">2021</p>
+            <h3 class="mt-1 font-semibold text-ink">20 dự án &amp; những khách hàng đầu tiên</h3>
+            <p class="mt-1 text-muted">Xây dựng quy trình làm việc chuẩn, hoàn thành 20 website doanh nghiệp.</p>
+          </li>
+          <li class="relative pb-10 pl-12">
+            <span class="absolute left-0 top-1 grid h-4 w-4 place-items-center rounded-full border-2 border-accent bg-cream" aria-hidden="true"></span>
+            <p class="font-display text-2xl font-bold text-accent">2022</p>
+            <h3 class="mt-1 font-semibold text-ink">Mở rộng sang phần mềm</h3>
+            <p class="mt-1 text-muted">Phát triển mảng phần mềm quản lý &amp; web app, cán mốc 50 dự án bàn giao.</p>
+          </li>
+          <li class="relative pb-10 pl-12">
+            <span class="absolute left-0 top-1 grid h-4 w-4 place-items-center rounded-full border-2 border-accent bg-cream" aria-hidden="true"></span>
+            <p class="font-display text-2xl font-bold text-accent">2024</p>
+            <h3 class="mt-1 font-semibold text-ink">Nền tảng SaaS &amp; đội ngũ lớn mạnh</h3>
+            <p class="mt-1 text-muted">Ra mắt các sản phẩm SaaS, đội ngũ mở rộng đa lĩnh vực: dev, design, SEO.</p>
+          </li>
+          <li class="relative pl-12">
+            <span class="absolute left-0 top-1 grid h-4 w-4 place-items-center rounded-full border-2 border-accent bg-accent" aria-hidden="true"></span>
+            <p class="font-display text-2xl font-bold text-accent">2026</p>
+            <h3 class="mt-1 font-semibold text-ink">Hôm nay</h3>
+            <p class="mt-1 text-muted">120+ dự án, đối tác của 85+ doanh nghiệp, tiếp tục sứ mệnh chuyển đổi số.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="px-5 py-20 sm:px-8 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal max-w-2xl">
+          <p class="eyebrow text-accent">Giá trị cốt lõi</p>
+          <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink sm:text-5xl">Điều chúng tôi luôn giữ vững</h2>
+        </div>
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="reveal rounded-xl2 border border-line bg-paper p-8">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11z" /></svg>
+            </span>
+            <h3 class="mt-5 font-display text-xl font-bold text-ink">Chất lượng không thỏa hiệp</h3>
+            <p class="mt-2 text-muted">Mỗi dòng code đều viết như sẽ vận hành 10 năm. Chuẩn senior, không vá tạm bợ.</p>
+          </div>
+          <div class="reveal rounded-xl2 border border-line bg-paper p-8" data-reveal-delay="1">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2m6-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" /></svg>
+            </span>
+            <h3 class="mt-5 font-display text-xl font-bold text-ink">Minh bạch &amp; đúng hẹn</h3>
+            <p class="mt-2 text-muted">Báo giá rõ ràng, tiến độ cập nhật hằng tuần, bàn giao đúng cam kết.</p>
+          </div>
+          <div class="reveal rounded-xl2 border border-line bg-paper p-8" data-reveal-delay="2">
+            <span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 6v6c0 5 3.5 7.5 8 9 4.5-1.5 8-4 8-9V6l-8-3z" /></svg>
+            </span>
+            <h3 class="mt-5 font-display text-xl font-bold text-ink">Đồng hành lâu dài</h3>
+            <p class="mt-2 text-muted">Bảo hành 12 tháng, hỗ trợ kỹ thuật và sẵn sàng nâng cấp khi bạn lớn lên.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 pb-20 sm:px-8 lg:pb-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+        <div class="reveal group">
+          <div class="img-zoom overflow-hidden rounded-xl2 border border-line shadow-soft">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=72&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1000&q=72&auto=format&fit=crop 1000w" sizes="(max-width: 1024px) 100vw, 50vw" width="1000" height="667" loading="lazy" decoding="async" alt="Đội ngũ Spark Digital cùng làm việc trên dự án" class="aspect-[3/2] w-full object-cover" />
+          </div>
+        </div>
+        <div class="reveal" data-reveal-delay="1">
+          <p class="eyebrow text-accent">Đội ngũ</p>
+          <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink">Những con người đứng sau</h2>
+          <p class="mt-4 text-lg text-muted">Một tập thể nhỏ gọn nhưng đa năng — kết hợp giữa kỹ thuật vững và tư duy kinh doanh.</p>
+          <div class="mt-8 grid grid-cols-2 gap-5">
+            <div class="flex items-center gap-3">
+              <span class="grid h-12 w-12 place-items-center rounded-full bg-ink font-display text-lg font-bold text-cream">MS</span>
+              <div>
+                <p class="font-semibold text-ink">Minh Spark</p>
+                <p class="text-sm text-muted">Founder &amp; Lead Dev</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="grid h-12 w-12 place-items-center rounded-full bg-accent font-display text-lg font-bold text-white">DS</span>
+              <div>
+                <p class="font-semibold text-ink">Design Team</p>
+                <p class="text-sm text-muted">UI/UX</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="grid h-12 w-12 place-items-center rounded-full bg-ink/80 font-display text-lg font-bold text-cream">BE</span>
+              <div>
+                <p class="font-semibold text-ink">Backend Team</p>
+                <p class="text-sm text-muted">Hệ thống &amp; API</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="grid h-12 w-12 place-items-center rounded-full bg-accent/80 font-display text-lg font-bold text-white">GR</span>
+              <div>
+                <p class="font-semibold text-ink">Growth Team</p>
+                <p class="text-sm text-muted">SEO &amp; Marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-ink px-5 py-16 text-cream sm:px-8">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 lg:grid-cols-4">
+        <div class="reveal text-center">
+          <p class="font-display text-4xl font-bold lg:text-5xl"><span data-counter="120" data-suffix="+">0</span></p>
+          <p class="mt-2 text-sm text-cream/60">Dự án hoàn thành</p>
+        </div>
+        <div class="reveal text-center" data-reveal-delay="1">
+          <p class="font-display text-4xl font-bold lg:text-5xl"><span data-counter="85" data-suffix="+">0</span></p>
+          <p class="mt-2 text-sm text-cream/60">Khách hàng</p>
+        </div>
+        <div class="reveal text-center" data-reveal-delay="2">
+          <p class="font-display text-4xl font-bold lg:text-5xl"><span data-counter="6" data-suffix=" năm">0</span></p>
+          <p class="mt-2 text-sm text-cream/60">Kinh nghiệm</p>
+        </div>
+        <div class="reveal text-center" data-reveal-delay="3">
+          <p class="font-display text-4xl font-bold lg:text-5xl"><span data-counter="98" data-suffix="%">0</span></p>
+          <p class="mt-2 text-sm text-cream/60">Khách hàng hài lòng</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-20 sm:px-8 lg:py-24">
+      <div class="mx-auto max-w-4xl text-center">
+        <h2 class="font-display text-4xl font-bold tracking-tightish text-ink sm:text-5xl">Muốn cùng chúng tôi viết tiếp câu chuyện?</h2>
+        <p class="mx-auto mt-5 max-w-xl text-lg text-muted">Dù bạn cần một website mới hay cả một hệ thống phần mềm, chúng tôi sẵn sàng lắng nghe.</p>
+        <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+          <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-white transition-colors duration-200 hover:bg-accent-hover">Liên hệ ngay</a>
+          <a href="portfolio.html" class="inline-flex items-center justify-center rounded-full border border-ink px-7 py-4 text-base font-semibold text-ink transition-colors duration-200 hover:bg-ink hover:text-cream">Xem dự án</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-cream">
+    <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <div class="grid gap-10 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="grid h-9 w-9 place-items-center rounded-full bg-cream text-ink">
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg>
+            </span>
+            <span class="font-display text-xl font-bold text-cream">Spark Digital</span>
+          </a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">Studio chuyển đổi số — thiết kế website &amp; phát triển phần mềm giúp doanh nghiệp tăng trưởng.</p>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Dịch vụ</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Thiết kế Website</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Phát triển Phần mềm</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Web App &amp; SaaS</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">SEO &amp; Bảo trì</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Công ty</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="about.html" class="text-cream/80 transition-colors hover:text-white">Giới thiệu</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm</a></li>
+            <li><a href="pricing.html" class="text-cream/80 transition-colors hover:text-white">Bảng giá</a></li>
+            <li><a href="portfolio.html" class="text-cream/80 transition-colors hover:text-white">Portfolio</a></li>
+            <li><a href="blog.html" class="text-cream/80 transition-colors hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Liên hệ</h3>
+          <ul class="mt-4 space-y-3 text-sm text-cream/80">
+            <li><a href="mailto:buidangminh.lh@gmail.com" class="transition-colors hover:text-white">buidangminh.lh@gmail.com</a></li>
+            <li><a href="tel:+84384741350" class="transition-colors hover:text-white">0384 741 350</a></li>
+            <li>Đông Anh, Hà Nội, Việt Nam</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+        <p class="text-sm text-cream/50">© <span data-year>2026</span> Spark Digital. Mọi quyền được bảo lưu.</p>
+        <p class="text-sm text-cream/50">Thiết kế &amp; phát triển bởi Spark Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <button data-back-to-top type="button" class="fixed bottom-6 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-ink text-cream opacity-0 shadow-soft transition-opacity duration-300 hover:bg-accent" aria-label="Lên đầu trang">
+    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7" /></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/widgets.js"></script>
+</body>
+</html>

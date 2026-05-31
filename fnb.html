@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giải pháp Nhà hàng & F&B — Spark Digital</title>
+  <meta name="description" content="Giải pháp số cho nhà hàng & F&B: web đặt món QR, POS quản lý bàn, đặt bàn online, CRM tích điểm và voicebot — cho chủ quán và thực khách." />
+  <meta name="theme-color" content="#FAF6EF" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Giải pháp Nhà hàng & F&B — Spark Digital" />
+  <meta property="og:description" content="Đặt món, đặt bàn và chăm sóc khách hàng tự động." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C2410C' d='M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-cream font-sans text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-cream">Bỏ qua tới nội dung</a>
+
+  <header data-header class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto max-w-7xl px-5 sm:px-8">
+      <nav class="flex items-center justify-between py-5" aria-label="Điều hướng chính">
+        <a href="index.html" class="flex items-center gap-2.5" aria-label="Spark Digital trang chủ">
+          <span class="grid h-9 w-9 place-items-center rounded-full bg-ink text-cream"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg></span>
+          <span class="font-display text-xl font-bold tracking-tightish text-ink">Spark Digital</span>
+        </a>
+        <div class="hidden items-center gap-7 xl:flex">
+          <a data-nav="index.html" href="index.html" class="nav-link text-sm font-medium text-muted">Trang chủ</a>
+          <a data-nav="about.html" href="about.html" class="nav-link text-sm font-medium text-muted">Giới thiệu</a>
+          <a data-nav="services.html" href="services.html" class="nav-link text-sm font-medium text-muted">Dịch vụ</a>
+          <a data-nav="products.html" href="products.html" class="nav-link text-sm font-medium text-muted">Sản phẩm</a>
+          <a data-nav="industries.html" href="industries.html" aria-current="page" class="nav-link text-sm font-medium text-muted">Ngành nghề</a>
+          <a data-nav="pricing.html" href="pricing.html" class="nav-link text-sm font-medium text-muted">Bảng giá</a>
+          <a data-nav="portfolio.html" href="portfolio.html" class="nav-link text-sm font-medium text-muted">Portfolio</a>
+          <a data-nav="contact.html" href="contact.html" class="nav-link text-sm font-medium text-muted">Liên hệ</a>
+        </div>
+        <div class="hidden items-center gap-5 xl:flex">
+          <a href="tel:+84384741350" class="text-sm font-semibold text-ink transition-colors hover:text-accent">0384 741 350</a>
+          <a href="contact.html" class="rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-accent">Nhận báo giá</a>
+        </div>
+        <button data-menu-toggle type="button" class="grid h-10 w-10 place-items-center rounded-full border border-line bg-paper/60 text-ink xl:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+      </nav>
+    </div>
+    <div id="mobile-menu" data-mobile-menu class="mx-5 hidden rounded-2xl border border-line bg-paper p-4 shadow-soft xl:hidden">
+      <div class="flex flex-col gap-1">
+        <a data-nav="index.html" href="index.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Trang chủ</a>
+        <a data-nav="about.html" href="about.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Giới thiệu</a>
+        <a data-nav="services.html" href="services.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Dịch vụ</a>
+        <a data-nav="products.html" href="products.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Sản phẩm</a>
+        <a data-nav="industries.html" href="industries.html" class="rounded-lg bg-sand px-3 py-2.5 text-sm font-medium text-ink">Ngành nghề</a>
+        <a data-nav="pricing.html" href="pricing.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Bảng giá</a>
+        <a data-nav="portfolio.html" href="portfolio.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Portfolio</a>
+        <a data-nav="contact.html" href="contact.html" class="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-sand">Liên hệ</a>
+        <a href="contact.html" class="mt-2 rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-cream hover:bg-accent">Nhận báo giá miễn phí</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="px-5 pt-32 pb-12 sm:px-8 lg:pt-40">
+      <div class="mx-auto max-w-7xl">
+        <nav class="reveal mb-6 text-sm text-muted" aria-label="Breadcrumb"><a href="industries.html" class="transition-colors hover:text-accent">Ngành nghề</a><span class="mx-2">/</span><span class="text-ink">Nhà hàng &amp; F&amp;B</span></nav>
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div class="reveal">
+            <p class="eyebrow text-accent">Giải pháp ngành · F&amp;B</p>
+            <h1 class="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-tightish text-ink sm:text-6xl">Đặt món, đặt bàn &amp; <span class="text-accent">giữ chân thực khách</span></h1>
+            <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted">Số hóa toàn bộ vận hành nhà hàng — từ QR menu, quản lý bàn đến chăm sóc khách hàng tự động.</p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#owner" class="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-accent-hover">Cho chủ quán</a>
+              <a href="#guest" class="inline-flex items-center justify-center rounded-full border border-ink px-7 py-4 text-base font-semibold text-ink transition-colors hover:bg-ink hover:text-cream">Cho thực khách</a>
+            </div>
+          </div>
+          <div class="reveal group" data-reveal-delay="1">
+            <div class="img-zoom overflow-hidden rounded-xl2 border border-line shadow-lift">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=72&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1000&q=72&auto=format&fit=crop 1000w" sizes="(max-width: 1024px) 100vw, 50vw" width="1000" height="750" loading="eager" fetchpriority="high" decoding="async" alt="Không gian nhà hàng" class="aspect-[4/3] w-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="owner" class="scroll-mt-24 px-5 py-16 sm:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div class="reveal group order-2 lg:order-1">
+            <div class="img-zoom overflow-hidden rounded-xl2 border border-line shadow-soft"><img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1000&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1556155092-490a1ba16284?w=700&q=72&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1556155092-490a1ba16284?w=1000&q=72&auto=format&fit=crop 1000w" sizes="(max-width: 1024px) 100vw, 50vw" width="1000" height="667" loading="lazy" decoding="async" alt="Phần mềm quản lý nhà hàng trên laptop" class="aspect-[3/2] w-full object-cover" /></div>
+          </div>
+          <div class="reveal order-1 lg:order-2">
+            <p class="eyebrow text-accent">Cho chủ quán &amp; nhà hàng</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink sm:text-5xl">Vận hành mượt, lãi rõ ràng</h2>
+            <p class="mt-4 text-lg text-muted">Kiểm soát nguyên liệu, doanh thu và nhiều chi nhánh trên một màn hình.</p>
+          </div>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Web đặt món &amp; QR menu</h3><p class="mt-2 text-sm text-muted">Thực đơn điện tử quét QR, cập nhật món &amp; giá tức thì.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path stroke-linecap="round" d="M8 9h8M8 13h8M8 17h5"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">POS &amp; quản lý bàn</h3><p class="mt-2 text-sm text-muted">Order theo bàn, gửi bếp tự động, tách/gộp hóa đơn nhanh.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 16V8l-9-5-9 5v8l9 5 9-5zM3 8l9 5 9-5M12 13v8"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Nguyên liệu &amp; định lượng</h3><p class="mt-2 text-sm text-muted">Trừ kho theo công thức món, kiểm soát hao hụt &amp; giá vốn.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 19V5m0 14h16M8 16v-5m4 5V8m4 8v-3"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Báo cáo doanh thu theo ca</h3><p class="mt-2 text-sm text-muted">Doanh số theo ca, món bán chạy, hiệu suất nhân viên.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm13 10v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">CRM tích điểm thành viên</h3><p class="mt-2 text-sm text-muted">Nhận diện khách quen, ưu đãi &amp; chăm sóc tự động.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m-7 8H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h8l4 4v10a2 2 0 0 1-2 2h-1"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Quản lý nhiều chi nhánh</h3><p class="mt-2 text-sm text-muted">Tổng hợp số liệu chuỗi, so sánh hiệu quả từng cơ sở.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="guest" class="scroll-mt-24 bg-sand/50 px-5 py-16 sm:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div class="reveal group">
+            <div class="img-zoom overflow-hidden rounded-xl2 border border-line shadow-soft"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&q=72&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=72&auto=format&fit=crop 700w, https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1000&q=72&auto=format&fit=crop 1000w" sizes="(max-width: 1024px) 100vw, 50vw" width="1000" height="667" loading="lazy" decoding="async" alt="Khách thanh toán bằng điện thoại" class="aspect-[3/2] w-full object-cover" /></div>
+          </div>
+          <div class="reveal" data-reveal-delay="1">
+            <p class="eyebrow text-accent">Cho thực khách</p>
+            <h2 class="mt-4 font-display text-4xl font-bold tracking-tightish text-ink sm:text-5xl">Gọi món dễ, trải nghiệm sang</h2>
+            <p class="mt-4 text-lg text-muted">Khách tự gọi món, thanh toán và tích điểm chỉ với chiếc điện thoại.</p>
+          </div>
+        </div>
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Đặt món tại bàn bằng QR</h3><p class="mt-2 text-sm text-muted">Quét – chọn – gửi bếp, không cần chờ phục vụ.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path stroke-linecap="round" d="M3 9h18M8 2v4M16 2v4"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Đặt bàn online</h3><p class="mt-2 text-sm text-muted">Giữ chỗ theo khung giờ, xác nhận tự động.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path stroke-linecap="round" d="M3 10h18"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Thanh toán không tiền mặt</h3><p class="mt-2 text-sm text-muted">QR ngân hàng, ví điện tử — thanh toán ngay tại bàn.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m12 2 2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.8 6.1 20.8l1.2-6.6L2.5 9l6.6-.9z"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Tích điểm &amp; ưu đãi</h3><p class="mt-2 text-sm text-muted">Tích điểm mỗi lần ăn, đổi quà &amp; nhận ưu đãi riêng.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="1"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h8M8 14h5M21 12a8 8 0 0 1-8 8H7l-4 3v-7a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Voicebot nhận đặt chỗ</h3><p class="mt-2 text-sm text-muted">Tổng đài AI nhận đặt bàn cả khi quán bận.</p></article>
+          <article class="reveal rounded-xl2 border border-line bg-paper p-7 shadow-soft" data-reveal-delay="2"><span class="grid h-12 w-12 place-items-center rounded-full bg-accent-soft text-accent"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></span><h3 class="mt-5 font-display text-lg font-bold text-ink">Đánh giá &amp; phản hồi</h3><p class="mt-2 text-sm text-muted">Thu phản hồi sau bữa ăn, cải thiện chất lượng.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 py-16 sm:px-8 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal overflow-hidden rounded-xl2 bg-ink px-6 py-16 text-center text-cream sm:px-12">
+          <h2 class="mx-auto max-w-2xl font-display text-4xl font-bold tracking-tightish sm:text-5xl">Nâng cấp nhà hàng của bạn</h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg text-cream/70">Nhận tư vấn &amp; báo giá miễn phí giải pháp F&amp;B phù hợp mô hình của bạn.</p>
+          <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-accent-hover">Nhận tư vấn miễn phí</a>
+            <a href="industries.html" class="inline-flex items-center justify-center rounded-full border border-cream/30 px-7 py-4 text-base font-semibold text-cream transition-colors hover:bg-cream hover:text-ink">Xem ngành khác</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-cream">
+    <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <div class="grid gap-10 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5"><span class="grid h-9 w-9 place-items-center rounded-full bg-cream text-ink"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z" /></svg></span><span class="font-display text-xl font-bold text-cream">Spark Digital</span></a>
+          <p class="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">Studio chuyển đổi số — thiết kế website &amp; phát triển phần mềm giúp doanh nghiệp tăng trưởng.</p>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Dịch vụ</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Thiết kế Website</a></li>
+            <li><a href="services.html" class="text-cream/80 transition-colors hover:text-white">Phát triển Phần mềm</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm AI</a></li>
+            <li><a href="industries.html" class="text-cream/80 transition-colors hover:text-white">Giải pháp theo ngành</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Công ty</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><a href="about.html" class="text-cream/80 transition-colors hover:text-white">Giới thiệu</a></li>
+            <li><a href="products.html" class="text-cream/80 transition-colors hover:text-white">Sản phẩm</a></li>
+            <li><a href="pricing.html" class="text-cream/80 transition-colors hover:text-white">Bảng giá</a></li>
+            <li><a href="portfolio.html" class="text-cream/80 transition-colors hover:text-white">Portfolio</a></li>
+            <li><a href="blog.html" class="text-cream/80 transition-colors hover:text-white">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-cream/40">Liên hệ</h3>
+          <ul class="mt-4 space-y-3 text-sm text-cream/80">
+            <li><a href="mailto:buidangminh.lh@gmail.com" class="transition-colors hover:text-white">buidangminh.lh@gmail.com</a></li>
+            <li><a href="tel:+84384741350" class="transition-colors hover:text-white">0384 741 350</a></li>
+            <li>Đông Anh, Hà Nội, Việt Nam</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+        <p class="text-sm text-cream/50">© <span data-year>2026</span> Spark Digital. Mọi quyền được bảo lưu.</p>
+        <p class="text-sm text-cream/50">Thiết kế &amp; phát triển bởi Spark Digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <button data-back-to-top type="button" class="fixed bottom-6 right-6 z-40 grid h-12 w-12 place-items-center rounded-full bg-ink text-cream opacity-0 shadow-soft transition-opacity duration-300 hover:bg-accent" aria-label="Lên đầu trang"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7" /></svg></button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/widgets.js"></script>
+</body>
+</html>
