@@ -11,5 +11,5 @@
  */
 window.SPARK_CONFIG = Object.freeze({
   web3formsAccessKey: "YOUR_WEB3FORMS_ACCESS_KEY",
-  formSubject: "Yêu cầu báo giá mới từ website Spark Digital",
+  formSubject: "Yêu cầu báo giá mới từ website SparkMarvel",
 });

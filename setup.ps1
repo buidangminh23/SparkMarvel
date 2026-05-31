@@ -1,7 +1,7 @@
 #requires -Version 7.0
 <#
 .SYNOPSIS
-    Khoi dong server tinh de xem truoc Spark Digital website tren localhost.
+    Khoi dong server tinh de xem truoc SparkMarvel website tren localhost.
 .DESCRIPTION
     Uu tien Python (http.server). Neu khong co Python, fallback sang `npx serve`.
     Mac dinh chay tai http://localhost:8080 va tu mo trinh duyet.
@@ -20,7 +20,7 @@ $ErrorActionPreference = "Stop"
 $root = $PSScriptRoot
 $url = "http://localhost:$Port"
 
-Write-Host "Spark Digital - dev server" -ForegroundColor Cyan
+Write-Host "SparkMarvel - dev server" -ForegroundColor Cyan
 Write-Host "Thu muc: $root"
 Write-Host "URL    : $url`n"
 

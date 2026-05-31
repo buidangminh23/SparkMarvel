@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Spark Digital site widgets: floating AI chat assistant + exit-intent offer.
+ * SparkMarvel site widgets: floating AI chat assistant + exit-intent offer.
  * Self-injecting and dependency-free. Include once per page after main.js.
  */
 (function () {
@@ -23,7 +23,7 @@
   const KNOWLEDGE = [
     {
       keys: ["xin chào", "xin chao", "chào", "chao", "hello", "hi ", "alo", "hey"],
-      reply: "Chào bạn! Mình là Spark AI. Mình có thể giúp gì về website, phần mềm hoặc sản phẩm AI của Spark Digital?",
+      reply: "Chào bạn! Mình là Spark AI. Mình có thể giúp gì về website, phần mềm hoặc sản phẩm AI của SparkMarvel?",
     },
     {
       keys: ["giá", "gia", "báo giá", "bao gia", "chi phí", "chi phi", "bao nhiêu", "bao nhieu", "cost", "pricing"],
@@ -37,12 +37,12 @@
     },
     {
       keys: ["sản phẩm", "san pham", "phần mềm", "phan mem", "quản lý", "quan ly", "crm", "kho", "nhân sự", "nhan su", "kế toán", "ke toan", "product"],
-      reply: "Spark Digital có sẵn nhiều phần mềm quản lý: Bán hàng (POS), Kho (WMS), Nhân sự & Chấm công, Kế toán & Hóa đơn, CRM, Quản lý dự án — cùng các sản phẩm AI.",
+      reply: "SparkMarvel có sẵn nhiều phần mềm quản lý: Bán hàng (POS), Kho (WMS), Nhân sự & Chấm công, Kế toán & Hóa đơn, CRM, Quản lý dự án — cùng các sản phẩm AI.",
       actions: [{ label: "Xem sản phẩm", href: "products.html" }],
     },
     {
       keys: ["dịch vụ", "dich vu", "service", "làm gì", "lam gi"],
-      reply: "Spark Digital cung cấp: Thiết kế Website, Phát triển Phần mềm, Web App & SaaS, và SEO & Bảo trì.",
+      reply: "SparkMarvel cung cấp: Thiết kế Website, Phát triển Phần mềm, Web App & SaaS, và SEO & Bảo trì.",
       actions: [{ label: "Xem dịch vụ", href: "services.html" }],
     },
     {
@@ -124,7 +124,7 @@
     );
     panel.id = "sparkChatPanel";
     panel.setAttribute("role", "dialog");
-    panel.setAttribute("aria-label", "Trợ lý AI Spark Digital");
+    panel.setAttribute("aria-label", "Trợ lý AI SparkMarvel");
     panel.innerHTML =
       '<header class="flex items-center justify-between gap-3 bg-ink px-4 py-3 text-cream">' +
       '<div class="flex items-center gap-3">' +
@@ -184,7 +184,7 @@
     const removeTyping = () => document.getElementById("sparkTyping")?.remove();
 
     const AI_ENDPOINT = "/api/chat";
-    const GREETING = "Chào bạn! Mình là Spark AI. Mình có thể giúp gì về website, phần mềm hoặc sản phẩm AI của Spark Digital?";
+    const GREETING = "Chào bạn! Mình là Spark AI. Mình có thể giúp gì về website, phần mềm hoặc sản phẩm AI của SparkMarvel?";
     const history = [];
     let aiAvailable = true;
 
@@ -317,7 +317,7 @@
       '<h2 id="sparkOfferTitle" class="mt-2 font-display text-2xl font-bold leading-tight">Tư vấn miễn phí + giảm 10% gói đầu tiên</h2>' +
       "</div>" +
       '<div class="px-6 py-6">' +
-      '<p class="text-muted">Để lại yêu cầu hôm nay để nhận tư vấn miễn phí và ưu đãi 10% cho dự án đầu tiên cùng Spark Digital.</p>' +
+      '<p class="text-muted">Để lại yêu cầu hôm nay để nhận tư vấn miễn phí và ưu đãi 10% cho dự án đầu tiên cùng SparkMarvel.</p>' +
       '<div class="mt-6 flex flex-col gap-3 sm:flex-row">' +
       '<a href="contact.html" class="flex-1 rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-accent-hover">Nhận ưu đãi ngay</a>' +
       '<button data-offer-close type="button" class="rounded-full border border-line px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-sand">Để sau</button>' +

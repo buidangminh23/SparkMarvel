@@ -294,14 +294,14 @@ function initContactForm() {
 
     const payload = new FormData(form);
     payload.append("access_key", accessKey);
-    payload.append("subject", config.formSubject || "Yêu cầu mới từ website Spark Digital");
+    payload.append("subject", config.formSubject || "Yêu cầu mới từ website SparkMarvel");
 
     try {
       const result = await submitToWeb3Forms(payload);
       if (result.ok) {
         form.reset();
         setStatus(
-          "Đã gửi thành công! Spark Digital sẽ liên hệ lại trong vòng 24 giờ làm việc.",
+          "Đã gửi thành công! SparkMarvel sẽ liên hệ lại trong vòng 24 giờ làm việc.",
           "success"
         );
       } else {

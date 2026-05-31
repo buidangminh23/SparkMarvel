@@ -1,4 +1,4 @@
-# Spark Digital — Website công ty
+# SparkMarvel — Website công ty
 
 Website giới thiệu công ty và bán dịch vụ thiết kế website / phát triển phần mềm. Static multi-page, không cần build step.
 
@@ -75,7 +75,7 @@ Hoặc kéo-thả thư mục vào Netlify / Cloudflare Pages / GitHub Pages.
 | Mục | File | Vị trí |
 |---|---|---|
 | Màu sắc / font | `assets/js/tailwind-config.js` | `theme.extend.colors`, `fontFamily` |
-| Tên thương hiệu | tất cả `*.html` | text `Spark Digital` + thẻ `<title>` |
+| Tên thương hiệu | tất cả `*.html` | text `SparkMarvel` + thẻ `<title>` |
 | Thông tin liên hệ | tất cả `*.html` | footer + `contact.html` |
 | Ảnh sản phẩm thật | tất cả `*.html` | thay URL `images.unsplash.com/...` bằng ảnh của bạn (giữ `srcset`, `alt`, `width/height`) |
 | Domain SEO | `robots.txt`, `sitemap.xml`, meta `og:` | thay `spark-digital.example.com` |
@@ -101,7 +101,7 @@ Form gửi mail thật qua [Web3Forms](https://web3forms.com) — không cần b
    ```js
    window.SPARK_CONFIG = Object.freeze({
      web3formsAccessKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-     formSubject: "Yêu cầu báo giá mới từ website Spark Digital",
+     formSubject: "Yêu cầu báo giá mới từ website SparkMarvel",
    });
    ```
 3. Xong. Mọi lead sẽ về thẳng email đã đăng ký.
@@ -145,4 +145,4 @@ Chatbot dùng **progressive enhancement**: chạy tĩnh/local → bot trả lờ
    ```
 3. Redeploy. Trợ lý "Spark AI" sẽ tự gọi `/api/chat` và trả lời bằng AI.
 
-**Kỹ thuật:** key chỉ nằm server-side (`process.env`), không lộ ra client · timeout 18–20s · nếu `/api/chat` trả 404/503 (chưa cấu hình / host tĩnh) → client tự fallback bot từ khóa, không lỗi · system prompt gắn ngữ cảnh Spark Digital, trả lời tiếng Việt ≤4 câu. Đổi model tại hằng `MODEL` trong `api/chat.js` (vd `anthropic/claude-...`).
+**Kỹ thuật:** key chỉ nằm server-side (`process.env`), không lộ ra client · timeout 18–20s · nếu `/api/chat` trả 404/503 (chưa cấu hình / host tĩnh) → client tự fallback bot từ khóa, không lỗi · system prompt gắn ngữ cảnh SparkMarvel, trả lời tiếng Việt ≤4 câu. Đổi model tại hằng `MODEL` trong `api/chat.js` (vd `anthropic/claude-...`).
